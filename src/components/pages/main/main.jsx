@@ -71,7 +71,7 @@ const Main = () => {
       </div>
       <div className="features">
         <div className="content">
-          <h1>Luminaplex - частный кинотеатр</h1>
+          <h1>LUMINAPLEX - ЧАСТНЫЙ КИНОТЕАТР</h1>
           <button className="spacebtn"></button>
         </div>
         <div className="cards_circles">
@@ -117,52 +117,46 @@ const Main = () => {
           </div>
           <button className="spacebtn"></button>
         </div>
-        <div className="cards_squares">
-          <article>
-            <figure><img src="https://assets.codepen.io/605876/person.png" /></figure>
-            <h2>Mike's mindful morning</h2>
-            <p>Course • Mindful Mike</p>
-          </article>
-          <article>
-            <figure><img src="https://assets.codepen.io/605876/person.png" /></figure>
-            <h2>Mike's mindful morning</h2>
-            <p>Course • Mindful Mike</p>
-          </article>
-          <article>
-            <figure><img src="https://assets.codepen.io/605876/person.png" /></figure>
-            <h2>Mike's mindful morning</h2>
-            <p>Course • Mindful Mike</p>
-          </article>
-          <article>
-            <figure><img src="https://assets.codepen.io/605876/person.png" /></figure>
-            <h2>Mike's mindful morning</h2>
-            <p>Course • Mindful Mike</p>
-          </article>
-          <article>
-            <figure><img src="https://assets.codepen.io/605876/person.png" /></figure>
-            <h2>Mike's mindful morning</h2>
-            <p>Course • Mindful Mike</p>
-          </article>
-          <article>
-            <figure><img src="https://assets.codepen.io/605876/person.png" /></figure>
-            <h2>Mike's mindful morning</h2>
-            <p>Course • Mindful Mike</p>
-          </article>
-          <article>
-            <figure><img src="https://assets.codepen.io/605876/person.png" /></figure>
-            <h2>Mike's mindful morning</h2>
-            <p>Course • Mindful Mike</p>
-          </article>
-          <article>
-            <figure><img src="https://assets.codepen.io/605876/person.png" /></figure>
-            <h2>Mike's mindful morning</h2>
-            <p>Course • Mindful Mike</p>
-          </article>
-          <article>
-            <figure><img src="https://assets.codepen.io/605876/person.png" /></figure>
-            <h2>Mike's mindful morning</h2>
-            <p>Course • Mindful Mike</p>
-          </article>
+          <div className="content">
+            <h1>8 ТЕМАТИЧЕСКИХ ЗАЛОВ НА ВЫБОР</h1>
+          </div>
+          <div className="cards_squares">
+          <div>
+            <img src="https://raw.githubusercontent.com/bandosiki/bandosiki.github.io/main/%D0%BA%D0%B8%D0%BD%D0%BE/cinemaroom/spacecinema2.jpg"></img>
+            <h3>КОСМОС</h3>
+          </div>
+          <div>
+            <img src="https://raw.githubusercontent.com/bandosiki/bandosiki.github.io/main/%D0%BA%D0%B8%D0%BD%D0%BE/cinemaroom/seacinema.jpg"></img>
+            <h3>МОРСКАЯ СИМФОНИЯ</h3>
+          </div>
+          <div>
+            <img src="https://raw.githubusercontent.com/bandosiki/bandosiki.github.io/main/%D0%BA%D0%B8%D0%BD%D0%BE/cinemaroom/etnocinema.jpg"></img>
+            <h3>ЭТНО</h3>
+          </div>
+          <div>
+            <img src="https://raw.githubusercontent.com/bandosiki/bandosiki.github.io/main/%D0%BA%D0%B8%D0%BD%D0%BE/cinemaroom/vostokcinema.jpg"></img>
+            <h3>ВОСТОК</h3>
+          </div>
+          <div>
+            <img src="https://raw.githubusercontent.com/bandosiki/bandosiki.github.io/main/%D0%BA%D0%B8%D0%BD%D0%BE/cinemaroom/blackroomcinema.jpg"></img>
+            <h3>BLACK ROOM</h3>
+          </div>
+          <div>
+            <img src="https://raw.githubusercontent.com/bandosiki/bandosiki.github.io/main/%D0%BA%D0%B8%D0%BD%D0%BE/cinemaroom/skycinema.jpg"></img>
+            <h3>НЕБЕСНЫЙ</h3>
+          </div>
+          <div>
+            <img src="https://raw.githubusercontent.com/bandosiki/bandosiki.github.io/main/%D0%BA%D0%B8%D0%BD%D0%BE/cinemaroom/bordocinema.jpg"></img>
+            <h3>БОРДО</h3>
+          </div>
+          <div>
+            <img src="https://raw.githubusercontent.com/bandosiki/bandosiki.github.io/main/%D0%BA%D0%B8%D0%BD%D0%BE/cinemaroom/skazkacinema.jpg"></img>
+            <h3>СКАЗКА</h3>
+          </div>
+          <div>
+            <img src="https://raw.githubusercontent.com/bandosiki/bandosiki.github.io/main/%D0%BA%D0%B8%D0%BD%D0%BE/cinemaroom/loftcinema.jpg"></img>
+            <h3>ТО ЛИ ЕЩЁ БУДЕТ </h3>
+          </div>
           <button className="spacebtn"></button>
         </div>
         <div className="order">
@@ -172,7 +166,6 @@ const Main = () => {
         </div>
       </div>
     </div>
-
   )
 }
 export default Main
