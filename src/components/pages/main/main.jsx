@@ -67,7 +67,6 @@ function Main() {
             <div className="card-content">
               <h2>{card.title}</h2>
               <p>{card.text}</p>
-              <a href="#" className="button">Find out more</a>
             </div>
           </div>
         ))}
