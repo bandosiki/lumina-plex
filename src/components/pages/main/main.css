@@ -9,7 +9,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (min-width: 600px) and (max-width: 700px) {
     .header {
         position: fixed;
         width: 100%;
@@ -37,11 +37,11 @@ body {
         justify-content: center;
         align-items: center;
         width: 100%;
-        padding-top: 10%;
+        padding-top: 35%;
     }
     
     .maintext>h1 {
-        font-size: 25pt;
+        font-size: 20pt;
     }
     
     
@@ -78,7 +78,7 @@ body {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin-top: 1%;
+        padding-top: 3%;
     }
     
     .spacebtn {
@@ -87,18 +87,16 @@ body {
         border-radius: 10px;
         width: 40%;
         height: 0.3vh;
-        margin: 3%;
+        margin: 2%;
     }
     .cards {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-top: 5%;
+        padding-top: 3%;
       }
     .card {
-        width: 12rem;
+        width: 30%;
         height: 20rem;
         cursor: pointer;
         position: relative;
@@ -163,13 +161,13 @@ body {
     .cards_circles {
         display: flex;
         flex-wrap: wrap;
-        gap: 5rem;
+        gap: 3rem;
         margin-top: 5%;
         justify-content: center;
       }
       
       .cards_circles > div {
-        width: 30%; 
+        width: 40%; 
         border-radius: 20px;
         text-align: center;
       }
@@ -181,13 +179,13 @@ body {
     .cards_squares {
         display: flex;
         flex-wrap: wrap;
-        gap: 4rem;
+        gap: 3rem;
         padding-top: 5%;
         justify-content: center;
       }
       
       .cards_squares > div {
-        width: 35%; 
+        width: 40%; 
         border-radius: 20px;
         text-align: center;
       }
@@ -201,12 +199,13 @@ body {
         margin-top: 3%;
         background-color: #DAE8E7;
     }
-    .order{
-        padding-top: 3%;
+    .content > h1{
+        font-size: 20pt;
     }
     .ordertext{
         text-align: center;
-        font-size: 10pt;
+        font-size: 8pt;
+        padding-top: 2%;
     }
     .centerline{
         display: flex;
@@ -241,7 +240,469 @@ body {
         width: 60%;
       }
 }
-@media only screen and (min-width: 1301px) {
+@media only screen and (min-width: 701px) and (max-width: 800px) {
+    .header {
+        position: fixed;
+        width: 100%;
+        z-index: 228;
+        background-color: #032d615a;
+        height: 6vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10%;
+        color: rgb(255, 255, 255);
+    }
+    
+    .headertext {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 35%;
+    }
+    
+    .maintext {
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 25%;
+    }
+    
+    .maintext>h1 {
+        font-size: 20pt;
+    }
+    
+    
+    .maintext>h6 {
+        font-size: 10pt;
+        margin-bottom: 2%;
+        margin-top: 1%;
+    }
+    
+    .maintext>button {
+        color: rgb(255, 255, 255);
+        background-color: #032d6161;
+        border: 2px solid rgb(255, 255, 255);
+        height: 6vh;
+        width: 25%;
+        transition: transform 0.3s;
+    }
+    
+    .maintext>button:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    
+    .backgroundImage {
+        display: block;
+        background-image: url("https://raw.githubusercontent.com/bandosiki/bandosiki.github.io/main/%D0%BA%D0%B8%D0%BD%D0%BE/background.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 2%;
+    }
+    
+    .spacebtn {
+        border: none;
+        background-color: #388581;
+        border-radius: 10px;
+        width: 40%;
+        height: 0.3vh;
+        margin: 2%;
+    }
+    .cards {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 3%;
+      }
+    .card {
+        width: 30%;
+        height: 25rem;
+        cursor: pointer;
+        position: relative;
+        color: rgb(240, 240, 240);
+        box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+        img {
+            position: absolute;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0.9;
+            transition: opacity 0.2s ease-out;
+        }
+    
+        h2 {
+            position: absolute;
+            inset: auto auto 30px 30px;
+            margin: 0;
+            transition: inset 0.3s 0.3s ease-out;
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: normal;
+            text-transform: uppercase;
+            font-size: 10pt;
+        }
+    
+        p,
+        a {
+            position: absolute;
+            opacity: 0;
+            max-width: 80%;
+            transition: opacity 0.3s ease-out;
+        }
+    
+        p {
+            inset: auto auto 80px 30px;
+        }
+    
+        a {
+            inset: auto auto 40px 30px;
+            color: inherit;
+            text-decoration: none;
+        }
+    
+        &:hover h2 {
+            inset: auto auto 220px 30px;
+            transition: inset 0.3s ease-out;
+        }
+    
+        &:hover p,
+        &:hover a {
+            opacity: 1;
+            transition: opacity 0.5s 0.1s ease-in;
+        }
+    
+        &:hover img {
+            transition: opacity 0.3s ease-in;
+            opacity: 1;
+        }
+    }
+    .cards_circles {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        margin-top: 5%;
+        justify-content: center;
+      }
+      
+      .cards_circles > div {
+        width: 40%; 
+        border-radius: 20px;
+        text-align: center;
+      }
+      .cards_circles img {
+        width: 100%; 
+        height: auto; 
+        border-radius: 20px;
+      }
+    .cards_squares {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        padding-top: 5%;
+        justify-content: center;
+      }
+      
+      .cards_squares > div {
+        width: 40%; 
+        border-radius: 20px;
+        text-align: center;
+      }
+      .cards_squares img {
+        width: 100%;    
+        height: auto; 
+        border-radius: 20px;
+      }
+    .features{
+        border-top: 1px solid black;
+        margin-top: 3%;
+        background-color: #DAE8E7;
+    }
+    .content > h1{
+        font-size: 20pt;
+    }
+    .ordertext{
+        text-align: center;
+        font-size: 10pt;
+        padding-top: 2%;
+    }
+    .centerline{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .order_circles_list {
+        display: flex;
+        justify-content: center;
+      }
+      .step {
+        text-align: center;
+        display: flex;
+        width: 25%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .step > p{
+        font-size: 10pt;
+      }
+      .circle {
+        width: 80px; /* Adjust the size of the circle */
+        height: 80px;
+        background-color: #000000; /* Adjust the background color of the circle */
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .circle > img {
+        width: 60%;
+      }
+}
+@media only screen and (min-width: 801px) and (max-width: 1000px) {
+    .header {
+        position: fixed;
+        width: 100%;
+        z-index: 228;
+        background-color: #032d615a;
+        height: 6vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10%;
+        color: rgb(255, 255, 255);
+    }
+    
+    .headertext {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 35%;
+    }
+    
+    .maintext {
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 20%;
+    }
+    
+    .maintext>h1 {
+        font-size: 25pt;
+    }
+    
+    
+    .maintext>h6 {
+        font-size: 10pt;
+        margin-bottom: 2%;
+        margin-top: 1%;
+    }
+    
+    .maintext>button {
+        color: rgb(255, 255, 255);
+        background-color: #032d6161;
+        border: 2px solid rgb(255, 255, 255);
+        height: 6vh;
+        width: 25%;
+        transition: transform 0.3s;
+    }
+    
+    .maintext>button:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    
+    .backgroundImage {
+        display: block;
+        background-image: url("https://raw.githubusercontent.com/bandosiki/bandosiki.github.io/main/%D0%BA%D0%B8%D0%BD%D0%BE/background.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 2%;
+    }
+    
+    .spacebtn {
+        border: none;
+        background-color: #388581;
+        border-radius: 10px;
+        width: 40%;
+        height: 0.3vh;
+        margin: 2%;
+    }
+    .cards {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 3%;
+      }
+    .card {
+        width: 30%;
+        height: 30rem;
+        cursor: pointer;
+        position: relative;
+        color: rgb(240, 240, 240);
+        box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+        img {
+            position: absolute;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0.9;
+            transition: opacity 0.2s ease-out;
+        }
+    
+        h2 {
+            position: absolute;
+            inset: auto auto 30px 30px;
+            margin: 0;
+            transition: inset 0.3s 0.3s ease-out;
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: normal;
+            text-transform: uppercase;
+            font-size: 10pt;
+        }
+    
+        p,
+        a {
+            position: absolute;
+            opacity: 0;
+            max-width: 80%;
+            transition: opacity 0.3s ease-out;
+        }
+    
+        p {
+            inset: auto auto 80px 30px;
+        }
+    
+        a {
+            inset: auto auto 40px 30px;
+            color: inherit;
+            text-decoration: none;
+        }
+    
+        &:hover h2 {
+            inset: auto auto 220px 30px;
+            transition: inset 0.3s ease-out;
+        }
+    
+        &:hover p,
+        &:hover a {
+            opacity: 1;
+            transition: opacity 0.5s 0.1s ease-in;
+        }
+    
+        &:hover img {
+            transition: opacity 0.3s ease-in;
+            opacity: 1;
+        }
+    }
+    .cards_circles {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        margin-top: 5%;
+        justify-content: center;
+      }
+      
+      .cards_circles > div {
+        width: 40%; 
+        border-radius: 20px;
+        text-align: center;
+      }
+      .cards_circles img {
+        width: 100%; 
+        height: auto; 
+        border-radius: 20px;
+      }
+    .cards_squares {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        padding-top: 5%;
+        justify-content: center;
+      }
+      
+      .cards_squares > div {
+        width: 40%; 
+        border-radius: 20px;
+        text-align: center;
+      }
+      .cards_squares img {
+        width: 100%;    
+        height: auto; 
+        border-radius: 20px;
+      }
+    .features{
+        border-top: 1px solid black;
+        margin-top: 3%;
+        background-color: #DAE8E7;
+    }
+    .content > h1{
+        font-size: 20pt;
+    }
+    .ordertext{
+        text-align: center;
+        font-size: 10pt;
+        padding-top: 2%;
+    }
+    .centerline{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .order_circles_list {
+        display: flex;
+        justify-content: center;
+      }
+      .step {
+        text-align: center;
+        display: flex;
+        width: 25%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .step > p{
+        font-size: 10pt;
+      }
+      .circle {
+        width: 80px; /* Adjust the size of the circle */
+        height: 80px;
+        background-color: #000000; /* Adjust the background color of the circle */
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .circle > img {
+        width: 60%;
+      }
+}
+@media only screen and (min-width: 1001px) and (max-width: 1300px) {
     .header {
         position: fixed;
         width: 100%;
@@ -269,11 +730,11 @@ body {
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 40vh;
+        padding-top: 20%;
     }
     
     .maintext>h1 {
-        font-size: 45pt;
+        font-size: 35pt;
     }
     
     .maintext>h3 {
@@ -291,7 +752,7 @@ body {
         background-color: #3885812f;
         border: 2px solid white;
         height: 6vh;
-        width: 10%;
+        width: 20%;
         transition: transform 0.3s;
     }
     
@@ -313,28 +774,26 @@ body {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin-top: 1%;
+        margin-top: 3%;
     }
     
     .spacebtn {
         border: none;
         background-color: #388581;
         border-radius: 10px;
-        width: 15%;
+        width: 40%;
         height: 0.3vh;
-        margin-top: 1%;
+        margin-top: 2%;
     }
     .cards {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding-top: 4%;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-top: 3%;
       }
     .card {
-        width: 20rem;
-        height: 30rem;
+        width: 30%;
+        height: 35rem;
         border-radius: 10px;
         cursor: pointer;
         position: relative;
@@ -404,7 +863,7 @@ body {
       }
       
       .cards_circles > div {
-        width: 30%; 
+        width: 25%; 
         border-radius: 20px;
         text-align: center;
       }
@@ -418,13 +877,11 @@ body {
         flex-wrap: wrap;
         gap: 3rem;
         padding-top: 5%;
-        padding-left: 18%;
-        padding-right: 18%;
         justify-content: center;
       }
       
       .cards_squares > div {
-        width: 30%; 
+        width: 25%; 
         border-radius: 20px;
         text-align: center;
       }
@@ -438,11 +895,10 @@ body {
         margin-top: 3%;
         background-color: #DAE8E7;
     }
-    .order{
-        padding-top: 3%;
-    }
     .ordertext{
         text-align: center;
+        font-size: 10pt;
+        padding-top: 2%;
     }
     .centerline{
         display: flex;
@@ -454,13 +910,249 @@ body {
         justify-content: center;
       }
       .step {
-        margin-right: 20px; /* Adjust the space between steps */
         text-align: center;
         display: flex;
-        width: 10%;
+        width: 25%;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+      }
+      .step > p{
+        font-size: 10pt;
+      }
+      .circle {
+        width: 80px; /* Adjust the size of the circle */
+        height: 80px;
+        background-color: #000000; /* Adjust the background color of the circle */
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .circle > img {
+        width: 60%;
+      }
+}
+@media only screen and (min-width: 1301px) and (max-width: 1700px) {
+    .header {
+        position: fixed;
+        width: 100%;
+        z-index: 228;
+        background-color: #032d615a;
+        height: 6vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15%;
+        color: rgb(255, 255, 255);
+    }
+    
+    .headertext {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 30%;
+    }
+    
+    .maintext {
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 40vh;
+    }
+    
+    .maintext>h1 {
+        font-size: 45pt;
+    }
+    
+    .maintext>h3 {
+        font-size: 25pt;
+    }
+    
+    .maintext>h6 {
+        font-size: 10pt;
+        margin-bottom: 2%;
+        margin-top: 1%;
+    }
+    
+    .maintext>button {
+        color: rgb(255, 255, 255);
+        background-color: #3885812f;
+        border: 2px solid white;
+        height: 6vh;
+        width: 20%;
+        transition: transform 0.3s;
+    }
+    
+    .maintext>button:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    
+    .backgroundImage {
+        display: block;
+        background-image: url("https://raw.githubusercontent.com/bandosiki/bandosiki.github.io/main/%D0%BA%D0%B8%D0%BD%D0%BE/background.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 2%;
+    }
+    
+    .spacebtn {
+        border: none;
+        background-color: #388581;
+        border-radius: 10px;
+        width: 40%;
+        height: 0.3vh;
+        margin-top: 2%;
+    }
+    .cards {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 3%;
+      }
+    .card {
+        width: 30%;
+        height: 45rem;
+        border-radius: 10px;
+        cursor: pointer;
+        position: relative;
+        color: rgb(240, 240, 240);
+        box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+        img {
+            position: absolute;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0.9;
+            transition: opacity 0.2s ease-out;
+        }
+    
+        h2 {
+            position: absolute;
+            inset: auto auto 30px 30px;
+            margin: 0;
+            transition: inset 0.3s 0.3s ease-out;
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+    
+        p,
+        a {
+            position: absolute;
+            opacity: 0;
+            max-width: 80%;
+            transition: opacity 0.3s ease-out;
+        }
+    
+        p {
+            inset: auto auto 80px 30px;
+        }
+    
+        a {
+            inset: auto auto 40px 30px;
+            color: inherit;
+            text-decoration: none;
+        }
+    
+        &:hover h2 {
+            inset: auto auto 220px 30px;
+            transition: inset 0.3s ease-out;
+        }
+    
+        &:hover p,
+        &:hover a {
+            opacity: 1;
+            transition: opacity 0.5s 0.1s ease-in;
+        }
+    
+        &:hover img {
+            transition: opacity 0.3s ease-in;
+            opacity: 1;
+        }
+    }
+    .cards_circles {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        padding-top: 5%;
+        justify-content: center;
+      }
+      .cards_circles >div> h5{
+        font-size: 10pt;
+      }
+      
+      .cards_circles > div {
+        width: 25%; 
+        border-radius: 20px;
+        text-align: center;
+      }
+      .cards_circles img {
+        width: 100%; 
+        height: auto; 
+        border-radius: 20px;
+      }
+    .cards_squares {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        padding-top: 5%;
+        justify-content: center;
+      }
+      
+      .cards_squares > div {
+        width: 25%; 
+        border-radius: 20px;
+        text-align: center;
+      }
+      .cards_squares img {
+        width: 100%; 
+        height: auto; 
+        border-radius: 20px;
+      }
+    .features{
+        border-top: 1px solid black;
+        margin-top: 3%;
+        background-color: #DAE8E7;
+    }
+    .ordertext{
+        text-align: center;
+        font-size: 10pt;
+        padding-top: 2%;
+    }
+    .centerline{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .order_circles_list {
+        display: flex;
+        justify-content: center;
+      }
+      .step {
+        text-align: center;
+        display: flex;
+        width: 30%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .step > p{
+        font-size: 12pt;
       }
       .circle {
         width: 100px; /* Adjust the size of the circle */
@@ -471,9 +1163,240 @@ body {
         align-items: center;
         justify-content: center;
       }
+      .circle > img {
+        width: 60%;
+      }
+}
+@media only screen and (min-width: 1701px){
+    .header {
+        position: fixed;
+        width: 100%;
+        z-index: 228;
+        background-color: #032d615a;
+        height: 6vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15%;
+        color: rgb(255, 255, 255);
+    }
+    
+    .headertext {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 30%;
+    }
+    
+    .maintext {
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 40vh;
+    }
+    
+    .maintext>h1 {
+        font-size: 45pt;
+    }
+    
+    .maintext>h3 {
+        font-size: 25pt;
+    }
+    
+    .maintext>h6 {
+        font-size: 10pt;
+        margin-bottom: 2%;
+        margin-top: 1%;
+    }
+    
+    .maintext>button {
+        color: rgb(255, 255, 255);
+        background-color: #3885812f;
+        border: 2px solid white;
+        height: 6vh;
+        width: 20%;
+        transition: transform 0.3s;
+    }
+    
+    .maintext>button:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    
+    .backgroundImage {
+        display: block;
+        background-image: url("https://raw.githubusercontent.com/bandosiki/bandosiki.github.io/main/%D0%BA%D0%B8%D0%BD%D0%BE/background.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 2%;
+    }
+    
+    .spacebtn {
+        border: none;
+        background-color: #388581;
+        border-radius: 10px;
+        width: 40%;
+        height: 0.3vh;
+        margin-top: 2%;
+    }
+    .cards {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 3%;
+      }
+    .card {
+        width: 30%;
+        height: 55rem;
+        border-radius: 10px;
+        cursor: pointer;
+        position: relative;
+        color: rgb(240, 240, 240);
+        box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+        img {
+            position: absolute;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0.9;
+            transition: opacity 0.2s ease-out;
+        }
+    
+        h2 {
+            position: absolute;
+            inset: auto auto 30px 30px;
+            margin: 0;
+            transition: inset 0.3s 0.3s ease-out;
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+    
+        p,
+        a {
+            position: absolute;
+            opacity: 0;
+            max-width: 80%;
+            transition: opacity 0.3s ease-out;
+        }
+    
+        p {
+            inset: auto auto 80px 30px;
+        }
+    
+        a {
+            inset: auto auto 40px 30px;
+            color: inherit;
+            text-decoration: none;
+        }
+    
+        &:hover h2 {
+            inset: auto auto 220px 30px;
+            transition: inset 0.3s ease-out;
+        }
+    
+        &:hover p,
+        &:hover a {
+            opacity: 1;
+            transition: opacity 0.5s 0.1s ease-in;
+        }
+    
+        &:hover img {
+            transition: opacity 0.3s ease-in;
+            opacity: 1;
+        }
+    }
+    .cards_circles {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        padding-top: 5%;
+        justify-content: center;
+      }
+      .cards_circles >div> h5{
+        font-size: 12pt;
+      }
+      .cards_circles > div {
+        width: 25%; 
+        border-radius: 20px;
+        text-align: center;
+      }
+      .cards_circles img {
+        width: 100%; 
+        height: auto; 
+        border-radius: 20px;
+      }
+    .cards_squares {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        padding-top: 5%;
+        justify-content: center;
+      }
       
-      .icon {
-        color: white; /* Adjust the color of icons */
-        font-size: 36px; /* Adjust the size of icons */
+      .cards_squares > div {
+        width: 25%; 
+        border-radius: 20px;
+        text-align: center;
+      }
+      .cards_squares img {
+        width: 100%; 
+        height: auto; 
+        border-radius: 20px;
+      }
+    .features{
+        border-top: 1px solid black;
+        margin-top: 3%;
+        background-color: #DAE8E7;
+    }
+    .ordertext{
+        text-align: center;
+        font-size: 10pt;
+        padding-top: 2%;
+    }
+    .centerline{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .order_circles_list {
+        display: flex;
+        justify-content: center;
+      }
+      .step {
+        text-align: center;
+        display: flex;
+        width: 25%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .step > p{
+        font-size: 13pt;
+      }
+      .circle {
+        width: 110px; /* Adjust the size of the circle */
+        height: 110px;
+        background-color: #000000; /* Adjust the background color of the circle */
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .circle > img {
+        width: 60%;
       }
 }
