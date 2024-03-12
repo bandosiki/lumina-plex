@@ -10,13 +10,16 @@ body {
   box-sizing: border-box;
 }
 .header {
-    background-color: rgba(0, 0, 0, 0.40);
-    height: 10vh;
+    position: fixed;
+    width: 100%;
+    z-index: 228;
+    background-color: #032d615a;
+    height: 6vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 15%;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .headertext {
@@ -27,7 +30,7 @@ body {
 }
 
 .maintext {
-    color: white;
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,8 +54,8 @@ body {
 }
 
 .maintext>button {
-    color: white;
-    background-color: transparent;
+    color: rgb(255, 255, 255);
+    background-color: #3885812f;
     border: 2px solid white;
     height: 6vh;
     width: 10%;
@@ -82,10 +85,10 @@ body {
 
 .spacebtn {
     border: none;
-    background-color: gray;
+    background-color: #388581;
     border-radius: 10px;
-    width: 8%;
-    height: 0.5vh;
+    width: 15%;
+    height: 0.3vh;
     margin-top: 1%;
 }
 .cards {
@@ -202,10 +205,7 @@ body {
 .features{
     border-top: 1px solid black;
     margin-top: 3%;
-    background-color: rgb(230, 230, 230);
-}
-.cards_circles > .spacebtn{
-    width: 75%;
+    background-color: #DAE8E7;
 }
 .order{
     padding-top: 3%;
@@ -213,3 +213,35 @@ body {
 .ordertext{
     text-align: center;
 }
+.centerline{
+    display: flex;
+    justify-content: center;
+}
+
+.order_circles_list {
+    display: flex;
+    justify-content: center;
+  }
+  .step {
+    margin-right: 20px; /* Adjust the space between steps */
+    text-align: center;
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .circle {
+    width: 100px; /* Adjust the size of the circle */
+    height: 100px;
+    background-color: #000000; /* Adjust the background color of the circle */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon {
+    color: white; /* Adjust the color of icons */
+    font-size: 36px; /* Adjust the size of icons */
+  }
